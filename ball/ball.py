@@ -31,11 +31,17 @@ class Ball:
         pygame.draw.circle(self.table.canvas, (255,255,0), (self.posx//10, self.posy//10), self.rad)    
     def move(self):
         global point1, point2,GRAVITY
-        self.posy += self.vely
-        self.posx += self.velx
-        self.vely -= GRAVITY
-        if self.posy >= (self.table.height*10 ):
-            self.vely = -int(math.floor((self.vely)*0.9))
+
+
+
+        self.posx += self.velx                                                  ###
+        self.posy += self.vely                                                  ###       
+        self.vely -= GRAVITY                                                    ###  The mathematical part lies here
+        if self.posy >= (self.table.height*10 ):                                ###      
+            self.vely = -int(math.floor((self.vely)*0.9))                       ###      
+
+
+
         self.draw() 
 
 

@@ -36,7 +36,7 @@ class Ball:
 
         self.posx += self.velx                                                  ###
         self.posy += self.vely                                                  ###       
-        self.vely -= GRAVITY                                                    ###  The mathematical part lies here
+        self.vely -= GRAVITY                                                    ###  he mathematical part lies here
         if self.posy >= (self.table.height*10 ):                                ###      
             self.vely = -int(math.floor((self.vely)*0.9))                       ###      
 
